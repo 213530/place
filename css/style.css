@@ -1,0 +1,1287 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Merienda:wght@300..900&display=swap');
+
+/* Estilos específicos para dispositivos maiores que 768px (computadores) */
+@media (min-width: 768px) {
+    /* Resetando margens e paddings */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Corrigir box-sizing */
+        user-select: none; /* Desativa a seleção de texto */
+        
+    }
+
+    /* Definindo a fonte padrão para o corpo da página */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: gray;
+        height: 100%;
+        width: 100%;
+    }
+
+    /* Estilo para o cabeçalho */
+    header {
+        background-color: #333;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    /* Estilo da imagem da logo */
+    .logo {
+        width: 25%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .logo img {
+        width: 30%;
+        border-radius: 50%;
+    }
+
+    /* Estilo para o título */
+    .text {
+        display: flex;
+        justify-content: center;
+    }
+
+    .text h1 {
+        color: white;
+        font-size: 6vw;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .text span {
+        color: red;
+        font-family: "Merienda", cursive;
+        text-shadow: 0px 0px 10px red;
+    }
+
+    /* Estilo do botão admin */
+    .admin-button {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button.admin {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button.admin i {
+        font-size: 6vw;
+        border-radius: 50%;
+        padding: 8px;
+        background-color: white;
+        color: #333;
+        margin: auto;
+    }
+
+    /* Linha */
+    .linha {
+        width: auto;
+        border: 1px solid black;
+    }
+
+    /* Estilo para a navegação */
+    nav {
+        width: 100%;
+        margin-top: 1%;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav ul li {
+        list-style: none;
+    }
+
+    .link-nav {
+        font-size: 3vw;
+        color: black;
+        font-family: "Agbalumo", serif;
+        cursor: pointer;
+        font-weight: bolder;
+        user-select: none;
+        text-decoration: none;
+        transition: 0.6s;
+    }
+
+    .link-nav:hover {
+        font-weight: bolder;
+        color: red;
+    }
+
+    .link-nav.active {
+        font-weight: bold; /* Adiciona negrito à página atual */
+        color: red ; /* Adiciona cor vermelha à página atual */
+    }
+
+    /* Título da página Niguiri */
+    .niguiri {
+        display: flex;
+        justify-content: center;
+        color: red;
+        font-family: "Agbalumo", serif;
+        font-size: 5vw;
+        text-shadow: 9px 5px 4px black;
+    }
+
+    /* Estilo para os cards de produtos */
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin-top: 2%;
+    }
+
+    .card {
+        width: 320px;
+        height: 100%;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        padding: 1%;
+    }
+
+    .descricao {
+        padding: 4%;
+        height: 220px;
+        border-radius: 10px;
+    }
+
+    .titulo-card h2 {
+        font-size: 2vw;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .sub p {
+        display: flex;
+        height: 4vw;
+        font-size: 15px;
+        margin-top: 5%;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        text-align: center;
+    }
+
+    .contain {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 6%;
+    }
+
+    .preco p {
+        font-size: 20px;
+        font-weight: bold; 
+
+    }
+
+    .add {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .add button {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 25%;
+        cursor: pointer;
+        border-radius: 100%;
+        transition: 0.6s;
+    }
+
+    .add button:hover {
+        color: black;
+        background-color: red;
+    }
+
+    .add button i {
+        font-size: 25px;
+    }
+
+    /* Rodapé */
+    footer {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        height: 10vw;
+        background-color: black;
+        color: white;
+        margin-top: 3%;
+    }
+
+    .logo1 {
+        font-size: 4vw;
+    }
+
+    .logo1 span {
+        font-family: "Merienda", cursive;
+        color: red;
+        text-shadow: 0px 0px 3px red;
+    }
+
+    .anuncio {
+        font-size: 3vw;
+        margin-top: 5%;
+    }
+
+    #midia {
+        display: flex;
+        align-items: center;
+    }
+
+    #midia ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        list-style: none;
+    }
+
+    .link-what, .link-face, .link-twit, .link-insta {
+        color: white;
+        font-size: 4vw;
+        padding: 1vw;
+        transition: 0.10s;
+    }
+
+    .link-what i:hover {
+        color: green;
+        scale: 1.1;
+    }
+
+    .link-face i:hover {
+        color: blue;
+        scale: 1.1;
+    }
+
+    .link-insta i:hover {
+        color: transparent;
+        background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+        background-clip: text;
+        scale: 1.1;
+    }
+
+    .sacola {
+        display: none; /* Inicialmente a sacola está escondida */
+        position: fixed; /* Usamos fixed para fixar a sacola na tela */
+        top: 80px; /* Posiciona a sacola abaixo do cabeçalho e do botão da sacola */
+        right: 10px; /* Posiciona a sacola na parte direita */
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 400px; /* Aumenta a largura da sacola */
+        max-height: 600px; /* Aumenta a altura máxima da sacola */
+        overflow-y: auto;
+        z-index: 999;
+        border-radius: 10px;
+    }
+
+    .sacola table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px; /* Adiciona margin-top à tabela */
+    }
+
+    .sacola th, .sacola td {
+        border: 1px solid #ddd;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .sacola th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    .sacola td button {
+        background-color: red; /* Define a cor de fundo do botão como vermelho */
+        color: white; /* Define a cor do texto como branco */
+        border: none; /* Remove a borda do botão */
+        padding: 5px 10px; /* Adiciona padding ao botão */
+        cursor: pointer; /* Define o cursor como pointer */
+        border-radius: 5px; /* Adiciona borda arredondada */
+        transition: background-color 0.3s; /* Adiciona uma transição suave para a cor de fundo */
+    }
+
+    .sacola td button:hover {
+        background-color: darkred; /* Altera a cor de fundo ao passar o mouse */
+    }
+
+    .item-carrinho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        color: green;
+    }
+
+    .item-carrinho span {
+        flex: 1;
+    }
+
+    .preco-item {
+        margin-top: 5px;
+    }
+
+    #itens-carrinho p {
+        margin-top: 20px; /* Adiciona margin-top à mensagem "Seu carrinho está vazio" */
+    }
+
+    /* Estilo para a tabela de pedidos */
+    .container h3 {
+        display: flex;
+        justify-content: center;
+        font-size: 30px;
+        width: 100%;
+        font-weight: bolder;
+        text-align: center;
+    }
+
+    #itens-carrinho-finalizacao {
+        margin: 0 auto;
+        width: 80%;
+        border-collapse: collapse;
+    }
+
+    #itens-carrinho-finalizacao table {
+        width: 100%;
+    }
+
+    #itens-carrinho-finalizacao th, #itens-carrinho-finalizacao td {
+        padding: 10px; /* Ajusta o padding das células da tabela para dispositivos móveis */
+        border: 1px solid #ddd; /* Linhas cinzas */
+        background-color: #f9f9f9; /* Fundo cinza claro */
+        font-size: 16px; /* Ajusta o tamanho da fonte das células */
+        text-align: center; /* Centraliza o texto */
+        border-radius: 10px;
+    }
+
+    #itens-carrinho-finalizacao th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+
+    /* Estilos para o botão de excluir na tabela de pedidos da página de finalização */
+    #itens-carrinho-finalizacao td button {
+        background-color: red; /* Define a cor de fundo do botão como vermelho */
+        color: white; /* Define a cor do texto como branco */
+        border: none; /* Remove a borda do botão */
+        padding: 5px 15px; /* Adiciona padding ao botão */
+        cursor: pointer; /* Define o cursor como pointer */
+        border-radius: 5px; /* Adiciona borda arredondada */
+        transition: background-color 0.3s; /* Adiciona uma transição suave para a cor de fundo */
+    }
+
+    #itens-carrinho-finalizacao td button:hover {
+        background-color: darkred; /* Altera a cor de fundo ao passar o mouse */
+    }
+
+    /* Estilo para o total */
+    #total-carrinho-finalizacao {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 20px;
+    }
+
+    /* Estilo para o formulário de dados do cliente */
+    #form-finalizacao {
+        width: 80%;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        background-color: #f9f9f9;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+    }
+
+    #form-finalizacao .form-group {
+        margin-bottom: 15px;
+    }
+
+    #form-finalizacao label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    #form-finalizacao input, #form-finalizacao textarea {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    #form-finalizacao textarea {
+        resize: none; /* Remove a ferramenta de redimensionamento */
+    }
+
+    #form-finalizacao .form-group div {
+        display: flex;
+        align-items: center;
+    }
+
+    #form-finalizacao .form-group div input {
+        width: auto;
+        margin-right: 10px;
+    }
+
+    #form-finalizacao .finalizar-compra {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        background-color: #4CAF50;
+        border: none;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+        margin-top: 20px;
+    }
+
+    #form-finalizacao .finalizar-compra:hover {
+        background-color: #45a049;
+    }
+
+    .mensagem-temporaria {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .mensagem-temporaria.mensagem-erro {
+        background-color: red;
+    }
+}
+
+/* Estilos específicos para tablets (largura entre 768px e 1024px) */
+@media (min-width: 767px) and (max-width: 1023px) {
+    body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer {
+        margin-top: auto;
+    }
+
+    /* Rodapé */
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 20vw;
+        margin-top: 6%;
+    }
+
+    .logo1 span {
+        font-family: "Merienda", cursive;
+        color: red;
+        text-shadow: 0px 0px 3px red;
+    }
+
+    .anuncio {
+        margin-top: 5%;
+    }
+
+    #link-footer ul li {
+        list-style: none;
+    }
+
+    /* Mídias */
+    #midia {
+        display: flex;
+        align-items: center;
+    }
+
+    #midia ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+
+    .link-what, .link-face, .link-insta {
+        color: white;
+        font-size: 4vw;
+        padding: 1vw;
+    }
+
+    .link-what {
+        color: green;
+    }
+
+    .link-face {
+        color: blue;
+    }
+
+    .link-insta {
+        color: transparent;
+        background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+        background-clip: text;
+    }
+
+    .mensagem-temporaria {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .mensagem-temporaria.mensagem-erro {
+        background-color: red;
+    }
+}
+
+/* Estilos específicos para dispositivos móveis (largura menor que 768px) */
+@media (max-width: 767px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; /* Corrigir box-sizing */
+        user-select: none; /* Desativa a seleção de texto */
+    }
+
+    /* Definindo a fonte padrão para o corpo da página */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #c9c9c9;
+        height: 100%;
+        width: 100%;
+    }
+
+    /* Estilo para o cabeçalho */
+    header {
+        background-color: #333;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    /* Estilo da imagem da logo */
+    .logo {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1%;
+    }
+
+    .logo img {
+        width: 65%;
+        height: 80%;
+        border-radius: 50%;
+        margin: auto;
+    }
+
+    /* Estilo para o título */
+    .text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
+    }
+
+    .text h1 {
+        color: white;
+        font-size: 8vw;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .text span {
+        font-family: "Merienda", cursive;
+        color: red;
+        text-shadow: 0px 0px 10px red;
+    }
+
+    /* Estilo do botão admin */
+    .admin-button {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button.admin {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 30%;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button.admin i {
+        font-size: 10vw;
+        border-radius: 50%;
+        padding: 8px;
+        background-color: white;
+        color: #333;
+        margin: auto;
+    }
+
+    /* Linha */
+    .linha {
+        width: auto;
+        border: 2px solid black;
+        border-collapse: collapse;
+    }
+
+    /* Estilos para a navegação */
+    nav {
+        width: 100%;
+        height: 11vw;
+        margin-top: 2%;
+        overflow-x: auto; /* Permite rolagem horizontal */
+        white-space: nowrap; /* Impede a quebra de linha dos itens */
+    }
+
+    nav ul {
+        display: inline-flex; /* Alinha os itens em linha */
+        align-items: center; /* Alinha os itens verticalmente */
+        height: 100%;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 10px;
+    }
+
+    .link-nav {
+        font-size: 5vw;
+        font-weight: bolder;
+        font-family: "Agbalumo", serif;
+        color: black;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .link-nav.active {
+        font-weight: bold; /* Adiciona negrito à página atual */
+        color: red; /* Adiciona cor vermelha à página atual */
+    }
+
+    /* Título da página Niguiri */
+    .niguiri {
+        display: flex;
+        justify-content: center;
+        color: red;
+        margin: 2% auto 3% auto;
+        font-family: "Agbalumo", serif;
+        font-size: 11vw;
+        text-shadow: 3px 3px black;
+    }
+
+    /* Estilo para os cards de produtos */
+    .container {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 50px;
+        margin-top: 2%;
+    }
+
+    .card {
+        width: 320px;
+        height: 100%;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+        padding: 1%;
+    }
+
+    .descricao {
+        padding: 2%;
+        height: 180px;
+        border-radius: 10px;
+    }
+
+    .titulo-card h2 {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .sub p {
+        display: flex;
+        height: 12vw;
+        font-size: 15px;
+        margin-top: 5%;
+        border: 1px solid black;
+        border-radius: 10px;
+        padding: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+        text-align: center;
+    }
+
+    .contain {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 6%;
+    }
+
+    .preco p {
+        font-size: 20px;
+        font-weight: bold;
+        color: green;
+    }
+
+    .add {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .add button {
+        background-color: green;
+        color: white;
+        border: none;
+        padding: 25%;
+        cursor: pointer;
+        border-radius: 100%;
+    }
+
+    .add button i {
+        font-size: 25px;
+    }
+
+    /* Rodapé */
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        background-color: black;
+        color: white;
+        width: 100%;
+        height: 25vw;
+        margin-top: 6%;
+    }
+
+    .logo1 span {
+        font-family: "Merienda", cursive;
+        color: red;
+        text-shadow: 0px 0px 3px red;
+    }
+
+    .anuncio {
+        margin-top: 5%;
+    }
+
+    #link-footer ul li {
+        list-style: none;
+    }
+
+    /* Mídias */
+    #midia {
+        display: flex;
+        align-items: center;
+    }
+
+    #midia ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+    }
+
+    .link-what, .link-face, .link-insta {
+        color: white;
+        font-size: 4vw;
+        padding: 1vw;
+    }
+
+    .link-what {
+        color: green;
+    }
+
+    .link-face {
+        color: blue;
+    }
+
+    .link-insta {
+        color: transparent;
+        background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+        background-clip: text;
+    }
+
+    /* Estilos para a sacola */
+    .sacola {
+        display: none; /* Inicialmente a sacola está escondida */
+        position: fixed; /* Usamos fixed para fixar a sacola na tela */
+        top: 80px; /* Posiciona a sacola abaixo do cabeçalho e do botão da sacola */
+        border-radius: 10px;
+        right: 3px; /* Posiciona a sacola na parte direita */
+        background-color: #fff;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 400px; /* Aumenta a largura da sacola */
+        max-height: 600px; /* Aumenta a altura máxima da sacola */
+        overflow-y: auto;
+        z-index: 999;
+    }
+
+    .sacola table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px; /* Adiciona margin-top à tabela */
+        margin-left: auto; /* Centraliza a tabela */
+        margin-right: auto; /* Centraliza a tabela */
+    }
+
+    .sacola th, .sacola td {
+        border: 1px solid black; /* Linhas pretas */
+        padding: 10px;
+        text-align: center;
+        background-color: white; /* Fundo branco */
+    }
+
+    .sacola td button {
+        background-color: red; /* Define a cor de fundo do botão como vermelho */
+        color: white; /* Define a cor do texto como branco */
+        border: none; /* Remove a borda do botão */
+        padding: 5px 10px; /* Adiciona padding ao botão */
+        cursor: pointer; /* Define o cursor como pointer */
+        border-radius: 5px; /* Adiciona borda arredondada */
+        transition: background-color 0.3s; /* Adiciona uma transição suave para a cor de fundo */
+
+    }
+
+    .sacola td button:hover {
+        background-color: darkred; /* Altera a cor de fundo ao passar o mouse */
+    }
+
+    .item-carrinho {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        color: green;
+    }
+
+    .item-carrinho span {
+        flex: 1;
+    }
+
+    .preco-item {
+        margin-top: 5px;
+    }
+
+    #itens-carrinho p {
+        margin-top: 20px; /* Adiciona margin-top à mensagem "Seu carrinho está vazio" */
+    }
+
+    #form-finalizacao {
+        width: 95%; /* Ajusta a largura para dispositivos móveis */
+        padding: 20px; /* Ajusta o padding para dispositivos móveis */
+        border-radius: 10px; /* Adiciona borda arredondada */
+        background-color: #ffffff; /* Adiciona cor de fundo */
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Adiciona sombra */
+        margin-top: 20px; /* Adiciona margem superior */
+    }
+
+    #form-finalizacao .form-group {
+        display: flex;
+        flex-direction: column; /* Coloca o label em cima e o input embaixo */
+        margin-bottom: 15px;
+    }
+
+    #form-finalizacao input, #form-finalizacao textarea {
+        padding: 12px; /* Ajusta o padding dos inputs para dispositivos móveis */
+        font-size: 16px; /* Ajusta o tamanho da fonte dos inputs */
+        border-radius: 10px;
+    }
+
+    #form-finalizacao .finalizar-compra {
+        padding: 12px; /* Ajusta o padding do botão para dispositivos móveis */
+        font-size: 18px; /* Ajusta o tamanho da fonte do botão para dispositivos móveis */
+        background-color: #ff5722; /* Altera a cor de fundo do botão */
+        border-radius: 8px; /* Ajusta o raio da borda do botão */
+    }
+
+    #form-finalizacao .finalizar-compra:hover {
+        background-color: #e64a19; /* Altera a cor de fundo do botão ao passar o mouse */
+    }
+
+    #itens-carrinho-finalizacao {
+        width: 100%; /* Ajusta a largura da tabela para dispositivos móveis */
+        margin: 0 auto; /* Centraliza a tabela */
+        border-collapse: collapse; /* Adiciona colapso na tabela */
+        overflow-x: auto; /* Permite overflow horizontal */
+    }
+
+    #itens-carrinho-finalizacao table {
+        width: 100%; /* Garante que a tabela ocupe toda a largura disponível */
+        margin: 0 auto; /* Centraliza a tabela */
+    }
+
+    #itens-carrinho-finalizacao th, #itens-carrinho-finalizacao td {
+        padding: 10px; /* Ajusta o padding das células da tabela para dispositivos móveis */
+        border: 1px solid #ddd; /* Linhas cinzas */
+        background-color: #f9f9f9; /* Fundo cinza claro */
+        font-size: 14px; /* Ajusta o tamanho da fonte das células */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    /* Estilos para o botão de excluir na tabela de pedidos da página de finalização */
+    #itens-carrinho-finalizacao td button {
+        background-color: red; /* Define a cor de fundo do botão como vermelho */
+        color: white; /* Define a cor do texto como branco */
+        border: none; /* Remove a borda do botão */
+        padding: 5px 10px; /* Adiciona padding ao botão */
+        cursor: pointer; /* Define o cursor como pointer */
+        border-radius: 5px; /* Adiciona borda arredondada */
+        transition: background-color 0.3s; /* Adiciona uma transição suave para a cor de fundo */
+    }
+
+    #itens-carrinho-finalizacao td button:hover {
+        background-color: darkred; /* Altera a cor de fundo ao passar o mouse */
+    }
+
+    #total-carrinho-finalizacao {
+        font-size: 20px; /* Ajusta o tamanho da fonte do total para dispositivos móveis */
+        color: #ff5722; /* Altera a cor do texto do total */
+        margin-top: 10px; /* Adiciona margem superior */
+    }
+
+    .container h3 {
+        font-size: 20px; /* Ajusta o tamanho da fonte do título para dispositivos móveis */
+        color: #333; /* Altera a cor do texto do título */
+        margin-bottom: 15px; /* Ajusta a margem inferior do título */
+      
+    }
+
+    .sacola table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px; /* Adiciona margin-top à tabela */
+        margin-left: auto; /* Centraliza a tabela */
+        margin-right: auto; /* Centraliza a tabela */
+    }
+
+    .sacola th, .sacola td {
+        border: 1px solid #ddd; /* Linhas cinzas */
+        padding: 10px;
+        text-align: center;
+        background-color: #f9f9f9; /* Fundo cinza claro */
+        font-size: 14px; /* Ajusta o tamanho da fonte das células */
+    }
+
+    .mensagem-temporaria {
+        position: fixed;
+        width: 90%;
+        top: 20px;
+        right: 5px;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .mensagem-temporaria.mensagem-erro {
+        background-color: red;
+    }
+}
+
+h3 {
+    font-family: 'Libre Baskerville', serif;
+    color: black;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.minimizar {
+    border-radius: 100%;
+    background-color: red;
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute; /* Adiciona posição absoluta */
+    top: 10px; /* Ajusta a posição do topo */
+    right: 10px; /* Ajusta a posição à direita */
+}
+
+.carrinho {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    background: #fff;
+    padding: 20px;
+    border-left: 2px solid #000;
+    display: none;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.item-carrinho {
+    margin-bottom: 20px;
+}
+
+.item-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes button {
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    margin: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.total {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.enviar-whatsapp button {
+    width: 100%;
+    padding: 10px;
+    background-color: #25d366;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+.finalizar-compra {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block; /* Adiciona display block */
+    margin-left: auto; /* Centraliza horizontalmente */
+    margin-right: auto; /* Centraliza horizontalmente */
+    margin-top: 20px;
+}
+
+.item-carrinho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    color: green;
+}
+
+#total-carrinho {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.item-carrinho span {
+    flex: 1;
+}
+
+.preco-item {
+    margin-top: 5px;
+}
+
+#itens-carrinho p {
+    font-weight: bolder;
+    margin-top: 2%;
+    padding: 2%;
+}
+.floating-bar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    z-index: 1000;
+    display: none;
+    backdrop-filter: blur(5px);
+}
+
+.floating-bar button {
+    background-color: #ff6347;
+    border-radius: 10px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.opcoes-entrega {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adiciona uma separação entre os botões */
+}
+
+.opcao-entrega {
+    display: inline-block;
+}
+
+.botao-entrega {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    text-align: center;
+}
+
+.botao-entrega i {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.botao-entrega:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
+
+.botao-entrega.active {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+input[type="radio"]:checked + .botao-entrega {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+/* Estilos para os botões de método de pagamento */
+.opcoes-pagamento {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Adiciona uma separação entre os botões */
+}
+
+.opcao-pagamento {
+    display: inline-block;
+}
+
+.botao-pagamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    text-align: center;
+}
+
+.botao-pagamento i {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.botao-pagamento:hover {
+    background-color: #f0f0f0;
+    border-color: #bbb;
+}
+
+.botao-pagamento.active {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}
+
+input[type="radio"]:checked + .botao-pagamento {
+    background-color: #4CAF50;
+    color: white;
+    border-color: #4CAF50;
+}

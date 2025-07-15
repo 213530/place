@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="Jhon Sushi">
+    <title>Isolutions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho --> 
+    <header> 
+        <!-- Logo -->
+        <div class="logo">
+            <img src="img/logo.img.png" alt="Logo do Jhon Sushi">
+        </div>
+        <!-- Título -->
+        <div class="text">
+            <h1> Iso<span>lutions</span> </h1>
+        </div>
+        <!-- Botão admin -->
+        <div class="admin-button">
+            <button class="admin" onclick="mostrarPainelAdmin()">
+                <i class="fas fa-user-circle"></i> 
+            </button>
+        </div>
+    </header>
+    <!-- Divisão cabeçalho -->
+    <div class="linha"></div>
+    <!-- Menu de navegação -->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="link-nav"> 
+                <div id= "link-nome">
+                Pare de se lamentar, comece a agir e mude sua vida</a></li>
+            </a></li>
+        </ul>
+    </nav>
+
+    <!-- Carrinho Expandido -->
+    <div id="sacola" class="sacola" style="display: none;">
+        <button id="minimizar" class="minimizar" onclick="minimizarSacola()">
+       
+             <i class="fa-light fa-x"></i>
+        </button>
+        <h3>Carrinho</h3>
+        <div id="itens-carrinho"></div>
+        <div id="total-carrinho">
+            <p>Total: R$ 0,00</p>
+        </div>
+        <button class="finalizar-compra" onclick="finalizarCompra()">Finalizar Compra</button>
+    </div>
+
+    <!-- Título Niguiri -->
+    <div class="niguiri">
+        <h2>Temos soluções!</h2>
+    </div>
+    <!-- Contêiner dos Cards -->
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="card">
+            <img src="img/estra_resized_640x801.jpg" alt="Niguiri Salmão">
+            <div class="dealmao.jpegscricao">
+                <div class="titulo-card">
+                    <h2>Arte da Persuasão</h2>
+                </div>
+                <div class="sub">
+                    <p>Aq você verá as 33 estratégias de persuasão, e controle emocional para se destacar e sempre estar um passo á frente.</p>
+                </div>
+                <div class="contain">
+                    <div class="preco">
+                        <p>Valor ítem R$ 19,99</p>
+                    </div>
+                    <div class="add">
+                        <button onclick="adicionar('Niguiri Salmão 05 unidades', 19.99)">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="card">
+            <img src="img/cabelo.webp" alt="Niguiri camarão"> 
+            <div class="descricao">
+                <div class="titulo-card">
+                    <h2>Anticalvície</h2>
+                </div>
+                <div class="sub">
+                    <p>Aqui você aprenderá mais do assunto, como cuidar e tratamentos naturais, além de tratamentos alternativos</p>
+                </div>
+                <div class="contain">
+                    <div class="preco">
+                        <p>Valor ítem R$ 19,99</p>
+                    </div>
+                    <div class="add">
+                        <button onclick="adicionar('Anticalvície', 19.99)">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="card">
+            <img src="img/c.webp" alt="Niguiri Kani">
+            <div class="descricao">
+                <div class="titulo-card">
+                    <h2>Consiga o shape</h2>
+                </div>
+                <div class="sub">
+                    <p>Aqui verá hábitos, alimentação e exercícios para te deixar no shape.</p>
+                </div>
+                <div class="contain">
+                    <div class="preco">
+                        <p>Valor ítem R$ 14,99</p>
+                    </div>
+                    <div class="add">
+                        <button onclick="adicionar('Shape', 19.99)">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Card 4 -->
+        <div class="card">
+            <img src="img/sec.jpg" alt="Niguiri Atum">
+            <div class="descricao">
+                <div class="titulo-card">
+                    <h2>Cibersecurity</h2>
+                </div>
+                <div class="sub">
+                    <p>Pra você que quer evoluir também profiddionalmente, temos uma introdução a cibersegurança.</p>
+                </div>
+                <div class="contain">
+                    <div class="preco">
+                        <p>Valor ítem R$ 19,99</p>
+                    </div>
+                    <div class="add">
+                        <button onclick="adicionar('Cibersecurity', 19,99)">
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Fim do contêiner -->
+    <!-- Rodapé -->
+    <footer>
+        <div class="logo1">Iso<span>lutions</span></div>
+        <!-- Anúncio -->
+        <div class="anuncio">
+            <h6>Satisfação garantida!</h6>
+        </div>
+        <!-- Mídias -->
+        <div id="midia">
+            <ul>
+                <li><a href="https://www.whatsapp.com/" target="_blank" class="link-what"><i class="fa-brands fa-whatsapp"></i></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank" class="link-face"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank" class="link-insta"><i class="fa-brands fa-instagram"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- Sacola Flutuante -->
+    <div class="floating-bar" id="floating-bar">
+        <span id="qtd-itens-sacola">0</span> itens
+        <button onclick="expandirSacola()">Ver Sacola</button>
+    </div>
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
