@@ -31,9 +31,10 @@
     <!-- Menu de navegação -->
     <nav>
         <ul>
-            <li><a href="index.html" class="link-nav"> 
-                <div id= "link-nome">
-                Pare de se lamentar, comece a agir e mude sua vida</a></li>
+            <li><a href="index.html" class="link-nav">      E-books  com as melhores soluções para sua tranquilidade</a></li>
+            <li><a href="javascript:void(0)" class="link-nav" onclick="expandirSacola()">
+                <i class="fa-solid fa-bag-shopping"></i> 
+                <span id="qtd-carrinho">0</span> itens
             </a></li>
         </ul>
     </nav>
@@ -41,8 +42,7 @@
     <!-- Carrinho Expandido -->
     <div id="sacola" class="sacola" style="display: none;">
         <button id="minimizar" class="minimizar" onclick="minimizarSacola()">
-       
-             <i class="fa-light fa-x"></i>
+            <i class="fa-light fa-x"></i>
         </button>
         <h3>Carrinho</h3>
         <div id="itens-carrinho"></div>
@@ -54,26 +54,26 @@
 
     <!-- Título Niguiri -->
     <div class="niguiri">
-        <h2>Temos soluções!</h2>
+        Soluções
     </div>
     <!-- Contêiner dos Cards -->
     <div class="container">
         <!-- Card 1 -->
         <div class="card">
             <img src="img/estra_resized_640x801.jpg" alt="Niguiri Salmão">
-            <div class="dealmao.jpegscricao">
+            <div class="descricao">
                 <div class="titulo-card">
-                    <h2>Arte da Persuasão</h2>
+                    <h2>Arte da manipulação</h2>
                 </div>
                 <div class="sub">
-                    <p>Aq você verá as 33 estratégias de persuasão, e controle emocional para se destacar e sempre estar um passo á frente.</p>
+                    <p>.</p>
                 </div>
                 <div class="contain">
                     <div class="preco">
                         <p>Valor ítem R$ 19,99</p>
                     </div>
                     <div class="add">
-                        <button onclick="adicionar('Niguiri Salmão 05 unidades', 19.99)">
+                        <button onclick="adicionar('Arte da persuasão', 19.99)">
                             <i class="fas fa-plus"></i>
                         </button>
                     </div>
@@ -85,17 +85,17 @@
             <img src="img/cabelo.webp" alt="Niguiri camarão"> 
             <div class="descricao">
                 <div class="titulo-card">
-                    <h2>Anticalvície</h2>
+                    <h2>Tratamento capilar</h2>
                 </div>
                 <div class="sub">
-                    <p>Aqui você aprenderá mais do assunto, como cuidar e tratamentos naturais, além de tratamentos alternativos</p>
+                    <p>Feito de arroz e camarão. É uma escolha saborosa além de leve.</p>
                 </div>
                 <div class="contain">
                     <div class="preco">
                         <p>Valor ítem R$ 19,99</p>
                     </div>
                     <div class="add">
-                        <button onclick="adicionar('Anticalvície', 19.99)">
+                        <button onclick="adicionar('tratamento capilar', 19.99)">
                             <i class="fas fa-plus"></i>
                         </button>
                     </div>
@@ -107,17 +107,17 @@
             <img src="img/c.webp" alt="Niguiri Kani">
             <div class="descricao">
                 <div class="titulo-card">
-                    <h2>Consiga o shape</h2>
+                    <h2>Conquiste o shape</h2>
                 </div>
                 <div class="sub">
-                    <p>Aqui verá hábitos, alimentação e exercícios para te deixar no shape.</p>
+                    <p>Feito de Kani (contém carangueijo) e Arroz, escolha deliciosa.</p>
                 </div>
                 <div class="contain">
                     <div class="preco">
-                        <p>Valor ítem R$ 14,99</p>
+                        <p>Valor ítem R$ 10,00</p>
                     </div>
                     <div class="add">
-                        <button onclick="adicionar('Shape', 19.99)">
+                        <button onclick="adicionar('Conquiste o shape', 19.99)">
                             <i class="fas fa-plus"></i>
                         </button>
                     </div>
@@ -129,17 +129,17 @@
             <img src="img/sec.jpg" alt="Niguiri Atum">
             <div class="descricao">
                 <div class="titulo-card">
-                    <h2>Cibersecurity</h2>
+                    <h2>Segurança Cibernética</h2>
                 </div>
                 <div class="sub">
-                    <p>Pra você que quer evoluir também profiddionalmente, temos uma introdução a cibersegurança.</p>
+                    <p>Feito de Atum e arroz. É uma ótima opção para saborear o Atum.</p>
                 </div>
                 <div class="contain">
                     <div class="preco">
                         <p>Valor ítem R$ 19,99</p>
                     </div>
                     <div class="add">
-                        <button onclick="adicionar('Cibersecurity', 19,99)">
+                        <button onclick="adicionar('Cibersecutity', 19.99)">
                             <i class="fas fa-plus"></i>
                         </button>
                     </div>
@@ -153,7 +153,7 @@
         <div class="logo1">Iso<span>lutions</span></div>
         <!-- Anúncio -->
         <div class="anuncio">
-            <h6>Satisfação garantida!</h6>
+            <h6>Garantia de satisfação!</h6>
         </div>
         <!-- Mídias -->
         <div id="midia">
