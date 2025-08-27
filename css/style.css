@@ -424,13 +424,8 @@
 
     /* Estilo para o formulário de dados do cliente */
     #form-finalizacao {
-        width: 80%;
-        margin: 0 auto;
-        padding: 20px;
-        border: 1px solid #ddd;
-        border-radius: 10px;
-        background-color: #f9f9f9;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona sombra */
+       
+      
     }
 
     #form-finalizacao .form-group {

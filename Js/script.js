@@ -418,7 +418,7 @@ function enviarNotaWhatsApp(event) {
     mensagem += `%0A*Total do Pedido:* R$ ${totalCarrinho.toFixed(2)}`;
 
     // Redirecionar para o WhatsApp
-    const numeroWhatsApp = '5585986814614'; // Substitua pelo número do WhatsApp do restaurante
+    const numeroWhatsApp = '5588997962265'; // Substitua pelo número do WhatsApp do restaurante
     const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensagem}`;
     window.open(urlWhatsApp, '_blank');
 
@@ -512,5 +512,4 @@ document.addEventListener('DOMContentLoaded', function() {
             window.location.href = 'index.html';
         }
     }
-    
 });

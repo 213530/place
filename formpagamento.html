@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Jhon Sushi">
-    <title>Finalizar Compra - Isolutions</title>
+    <title>Finalizar Compra - Jhon Sushi</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -71,10 +71,13 @@
 
     <!-- Formulário de Dados do Cliente -->
     <div class="container">
-        <h3></h3>
         <form id="form-finalizacao" onsubmit="enviarNotaWhatsApp(event)">
-            
-            <button type="submit" class="finalizar-compra">Confirmar Pedido</button>
+            <div class="form-group">
+                    </div>
+                </div>
+                <input type="hidden" id="metodo_pagamento" name="metodo_pagamento" >
+            </div>
+          <button type="submit" class="finalizar-compra" onclick="window.open('https://wa.me/5585986814614?text=Olá,%20quero%20finalizar%20meu%20pedido!', '_blank'); return false;">Confirmar Pedido</button>
         </form>
     </div>
 
@@ -83,7 +86,7 @@
         <div class="logo1">Iso<span>lutions</span></div>
         <!-- Anúncio -->
         <div class="anuncio">
-            <h6>Aceitamos encomendas para eventos!</h6>
+            <h6>Satisfação garantida!</h6>
         </div>
         <!-- Mídias -->
         <div id="midia">
