@@ -509,7 +509,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const carrinho = JSON.parse(localStorage.getItem('carrinho')) || [];
         if (carrinho.length === 0) {
             alert('Seu carrinho está vazio. Redirecionando para a página inicial...');
-            window.location.href = 'index.html';
+           window.location.href = 'index.html';
         }
     }
 });
