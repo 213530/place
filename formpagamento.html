@@ -9,44 +9,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <!-- Cabeçalho --> 
-    <header> 
-        <!-- Logo -->
+    <header>
         <div class="logo">
             <img src="img/logo.img.png" alt="Logo do Jhon Sushi">
         </div>
-        <!-- Título -->
         <div class="text">
             <h1> Iso<span>lutions</span> </h1>
         </div>
-        <!-- Botão admin -->
         <div class="admin-button">
             <button class="admin" onclick="mostrarPainelAdmin()">
-                <i class="fas fa-user-circle"></i> 
+                <i class="fas fa-user-circle"></i>
             </button>
         </div>
     </header>
-    <!-- Divisão cabeçalho -->
     <div class="linha"></div>
-    <!-- Menu de navegação -->
     <nav>
         <ul>
-            <li><a href="index.html" class="link-nav"></a></li>
-            <li><a href="hossomaki.html" class="link-nav"></a></li>
-            <li><a href="uramakis.html" class="link-nav"></a></li>
-            <li><a href="hots.html" class="link-nav"></a></li>
-            <li><a href="temaki.html" class="link-nav"></a></li>
-            <li><a href="combinado.html" class="link-nav"></a></li>
-            <li><a href="combinado.html" class="link-nav"></a></li>
+            <li><a href="index.html" class="link-nav">Início</a></li>
         </ul>
     </nav>
 
-    <!-- Título Finalizar Compra -->
     <div class="niguiri">
         Finalizar Compra
     </div>
-    
-    <!-- Tabela de Pedidos -->
+
     <div class="container">
         <h3>Seus Pedidos</h3>
         <div id="itens-carrinho-finalizacao">
@@ -60,7 +46,7 @@
                     </tr>
                 </thead>
                 <tbody id="tabela-pedidos">
-                    <!-- Itens do carrinho serão inseridos aqui -->
+                    <!-- Itens do carrinho serão inseridos aqui pelo JS -->
                 </tbody>
             </table>
         </div>
@@ -69,26 +55,19 @@
         </div>
     </div>
 
-    <!-- Formulário de Dados do Cliente -->
     <div class="container">
         <form id="form-finalizacao" onsubmit="enviarNotaWhatsApp(event)">
-            <div class="form-group">
-                    </div>
-                </div>
-                <input type="hidden" id="metodo_pagamento" name="metodo_pagamento" >
-            </div>
-          <button type="submit" class="finalizar-compra">Confirmar Pedido</button>
+            
+
+            <button type="submit" class="finalizar-compra">Confirmar Pedido</button>
         </form>
     </div>
 
-    <!-- Rodapé -->
     <footer>
         <div class="logo1">Iso<span>lutions</span></div>
-        <!-- Anúncio -->
         <div class="anuncio">
             <h6>Satisfação garantida!</h6>
         </div>
-        <!-- Mídias -->
         <div id="midia">
             <ul>
                 <li><a href="https://www.whatsapp.com/" target="_blank" class="link-what"><i class="fa-brands fa-whatsapp"></i></a></li>
@@ -97,7 +76,6 @@
             </ul>
         </div>
     </footer>
-    <!-- JavaScript -->
     <script src="js/script.js"></script>
 </body>
 </html>
