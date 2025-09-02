@@ -264,116 +264,14 @@ function removerItemFinalizacao(index) {
         qtdItensSacola.textContent = calcularTotalItens();
     }
 }
-
-// Função para verificar campos obrigatórios
-function verificarCamposObrigatorios(campos) {
-    let todosPreenchidos = true;
-    let camposFaltantes = [];
-
-    campos.forEach(campoId => {
-        const campo = document.getElementById(campoId);
-        if (!campo.value.trim()) {
-            todosPreenchidos = false;
-            camposFaltantes.push(campoId);
-        } else {
-            campo.style.borderColor = 'black';
-        }
-    });
-
-    if (!todosPreenchidos) {
-        camposFaltantes.forEach(campoId => {
-            const campo = document.getElementById(campoId);
-            campo.style.borderColor = 'orange';
-        });
-        exibirMensagem(`Por favor, preencha os seguintes campos: ${camposFaltantes.join(', ')}`, true);
-    }
-
-    return todosPreenchidos;
-}
-
-// Função para selecionar a opção de entrega
-function selecionarOpcao(opcao) {
-    const camposObrigatorios = ['nome', 'telefone'];
-    if (!verificarCamposObrigatorios(camposObrigatorios)) {
-        return;
-    }
-
-    const botoes = document.querySelectorAll('.botao-entrega');
-    botoes.forEach(botao => {
-        botao.classList.remove('active');
-    });
-
-    const botaoSelecionado = document.querySelector(`.botao-entrega[onclick="selecionarOpcao('${opcao}')"]`);
-    botaoSelecionado.classList.add('active');
-
-    const inputOpcaoEntrega = document.getElementById('opcao_entrega');
-    inputOpcaoEntrega.value = opcao;
-
-    const enderecoEntrega = document.getElementById('endereco-entrega');
-    const containerMetodoPagamento = document.getElementById('container-metodo-pagamento');
-    if (opcao === 'entrega') {
-        enderecoEntrega.style.display = 'block';
-        containerMetodoPagamento.style.display = 'block';
-    } else {
-        enderecoEntrega.style.display = 'none';
-        containerMetodoPagamento.style.display = 'none';
-    }
-}
-
-// Função para selecionar o método de pagamento
-function selecionarPagamento(metodo) {
-    const camposObrigatorios = ['cep', 'rua', 'numero', 'bairro', 'cidade', 'uf'];
-    if (!verificarCamposObrigatorios(camposObrigatorios)) {
-        return;
-    }
-
-    const botoes = document.querySelectorAll('.botao-pagamento');
-    botoes.forEach(botao => {
-        botao.classList.remove('active');
-    });
-
-    const botaoSelecionado = document.querySelector(`.botao-pagamento[onclick="selecionarPagamento('${metodo}')"]`);
-    botaoSelecionado.classList.add('active');
-
-    const inputMetodoPagamento = document.getElementById('metodo_pagamento');
-    inputMetodoPagamento.value = metodo;
-}
-
-// Função para preencher automaticamente o endereço com base no CEP
-function preencherEndereco() {
-    const cep = document.getElementById('cep').value.replace(/\D/g, '');
-    if (cep !== '') {
-        const validacep = /^[0-9]{8}$/;
-        if (validacep.test(cep)) {
-            fetch(`https://viacep.com.br/ws/${cep}/json/`)
-                .then(response => response.json())
-                .then(data => {
-                    if (!data.erro) {
-                        document.getElementById('rua').value = data.logradouro;
-                        document.getElementById('bairro').value = data.bairro;
-                        document.getElementById('cidade').value = data.localidade;
-                        document.getElementById('uf').value = data.uf;
-                    } else {
-                        exibirMensagem('CEP não encontrado.');
-                    }
-                })
-                .catch(error => {
-                    console.error('Erro ao buscar o CEP:', error);
-                    exibirMensagem('Erro ao buscar o CEP.');
-                });
-        } else {
-            exibirMensagem('Formato de CEP inválido.');
-        }
-    }
-}
-
+  
 // Função para capturar os dados do formulário e enviar a nota via WhatsApp
 function enviarNotaWhatsApp(event) {
     event.preventDefault(); // Previne o comportamento padrão do formulário
+
     let mensagem = `*Nota do Pedido - Visionary*%0A`;
     mensagem += `*Itens do Pedido:*%0A`;
-
-    carrinho.forEach(item => {
+     carrinho.forEach(item => {
         mensagem += `- ${item.nome} (Qtd: ${item.quantidade}) - R$ ${item.preco.toFixed(2)}%0A`;
     });
 
@@ -391,20 +289,6 @@ function enviarNotaWhatsApp(event) {
     exibirItensCarrinho();
     exibirMensagem('Pedido confirmado e enviado via WhatsApp!');
 }
-
-// Adiciona evento de verificação aos campos obrigatórios
-document.addEventListener('DOMContentLoaded', function() {
-    const camposObrigatorios = ['nome', 'telefone', 'cep', 'rua', 'bairro', 'cidade', 'uf'];
-    camposObrigatorios.forEach(campoId => {
-        const campo = document.getElementById(campoId);
-        campo.addEventListener('input', () => {
-            campo.style.borderColor = 'black';
-        });
-    });
-
-    // Esconder métodos de pagamento inicialmente
-    document.getElementById('container-metodo-pagamento').style.display = 'none';
-});
 
 // Quando a página for carregada, exibir os itens do carrinho na finalização
 window.addEventListener('load', function() {
