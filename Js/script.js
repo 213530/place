@@ -272,7 +272,7 @@ function enviarNotaWhatsApp(event) {
     let mensagem = `*Nota do Pedido - Visionary*%0A`;
     mensagem += `*Itens do Pedido:*%0A`;
      carrinho.forEach(item => {
-        mensagem += `- ${item.nome} (Qtd: ${item.quantidade}) - R$ ${item.preco.toFixed(2)}%0A`;
+        mensagem += `- ${item.nome} - R$ ${item.preco.toFixed(2)}%0A`;
     });
 
     mensagem += `%0A*Total do Pedido:* R$ ${totalCarrinho.toFixed(2)}`;
